@@ -44,7 +44,7 @@ body {
 }
 
 .panel:hover {
-  flex: 1.5; /* Expand the panel on hover */
+  flex: 5; /* Expand the panel on hover */
   transform: scale(1.05); /* Slightly scale the panel for a smooth zoom effect */
 }
 
