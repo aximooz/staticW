@@ -30,7 +30,7 @@ body {
   flex: 0.5;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: flex 0.7s ease-in, transform 0.3s ease; /* Added transition for flex and transform */
   -webkit-transition: all 700ms ease-in;
 }
 
@@ -41,6 +41,16 @@ body {
   left: 20px;
   margin: 0;
   opacity: 0;
+}
+
+.panel:hover {
+  flex: 1.5; /* Expand the panel on hover */
+  transform: scale(1.05); /* Slightly scale the panel for a smooth zoom effect */
+}
+
+.panel:hover h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 .panel.active {
